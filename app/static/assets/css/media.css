@@ -1,0 +1,55 @@
+
+@media(max-width: 991px){
+	#section_sep{
+		margin-top: 110px !important;
+	}
+}
+
+@media(max-width: 900px){
+	#section_sep{
+		margin-top: 110px !important;
+	}
+}
+
+@media(max-width: 767px){
+	#section_sep{
+		margin-top: 100px !important;
+	}
+	.coin_col{
+		margin-bottom: 80px;
+	}
+	.main_img{
+		display: none;
+	}
+}
+
+@media(max-width: 620px){
+	.get_started{
+		margin-bottom: 60px;
+	}
+}
+
+@media(max-width: 575px){
+	.get_started{
+		margin-bottom: 150px;
+	}
+}
+
+
+@media(max-width: 486px){
+	.get_started{
+		margin-bottom: 150px;
+	}
+}
+
+
+@media(max-width: 421px){
+	.get_started{
+		margin-bottom: 190px;
+	}
+	#dashboard_col{
+		padding-left: 3px;
+		padding-right: 3px;
+		margin-bottom: -500px !important;
+	}
+}

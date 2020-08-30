@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="page-header">
+      <img src="/static/assets/img/blob.png" class="path">
+      <img src="/static/assets/img/path2.png" class="path2">
+      <img src="/static/assets/img/triunghiuri.png" class="shapes triangle">
+      <img src="/static/assets/img/waves.png" class="shapes wave">
+      <img src="/static/assets/img/patrat.png" class="shapes squares">
+      <img src="/static/assets/img/cercuri.png" class="shapes circle">
+      <div class="content-center">
+        <div class="row row-grid justify-content-between align-items-center text-left">
+          <div class="col-lg-6 col-md-6">
+            <h1 class="text-white">We keep Your Password
+              <br/>
+              <span class="text-white">secured</span>
+            </h1>
+            <p class="text-white mb-3">Why bother yourself about trying to memorize your password, when PassLy got you covered. With awesome features like Password Generator, Password Saver, Social Media Mining and the rest.</p>
+
+            <div class="btn-wrapper">
+              <div class="button-container">
+                <a href="{{url_for('get_started')}}" class="btn btn-primary btn-success get_started">Get Started Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-5">
+            <img src="/static/assets/svgs/undraw_secure_data_0rwp.svg" class="img-fluid main_img" style="width: 400px !important; cursor: pointer;" alt="main img">
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr id="section_sep" style="margin-bottom: -350px !important;">
+    <section class="section section-lg section-coins">
+      <img src="/static/assets/img/path3.png" class="path">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <hr class="line-info">
+            <h1>Choose A Plan
+              <span class="text-info">that suits your needs</span>
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 coin_col">
+            <div class="card card-coin card-plain">
+              <div class="card-header">
+                <img src="/static/assets/svgs/undraw_unlock_24mb.svg" class="img-center img-fluid" style="width: 300px; cursor: pointer;">
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h4 class="text-uppercase">Free</h4>
+                    <span>Plan</span>
+                    <hr class="line-primary">
+                  </div>
+                </div>
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">30 passwords</li>
+                    <li class="list-group-item">password generators</li>
+                    <li class="list-group-item"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <a href="{{url_for('get_started')}}" class="btn btn-primary btn-simple">Get started</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 coin_col">
+            <div class="card card-coin card-plain">
+              <div class="card-header">
+                <img src="/static/assets/svgs/undraw_secure_login_pdn4.svg" class="img-center img-fluid" style="width: 280px; cursor: pointer;">
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h4 class="text-uppercase">Paid</h4>
+                    <span>Plan</span>
+                    <hr class="line-success">
+                  </div>
+                </div>
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">300 passwords</li>
+                    <li class="list-group-item">password generators</li>
+                    <li class="list-group-item">24/7 Support</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <a href="{{url_for('get_started')}}" class="btn btn-success btn-simple">Get started</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 coin_col">
+            <div class="card card-coin card-plain">
+              <div class="card-header">
+                <img src="/static/assets/svgs/undraw_Security_on_ff2u.svg" class="img-center img-fluid"  style="width: 280px; cursor: pointer;">
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h4 class="text-uppercase">Premiun</h4>
+                    <span>Plan</span>
+                    <hr class="line-info">
+                  </div>
+                </div>
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">Unlimited passwords</li>
+                    <li class="list-group-item">password generators</li>
+                    <li class="list-group-item">Social Media Data Mining</li>
+                    <li class="list-group-item">24/7 Support</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <a href="{{url_for('get_started')}}" class="btn btn-info btn-simple">Get started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}
